@@ -8,6 +8,9 @@
     <link rel="canonical" href="$SOME_URL" /> pointing to regular HTML version, or self if no other HTML file
     <meta name="viewport" content="width=device-width,minimum-scale=1"> 
     <style amp-boilerplate> see full code snippet below 
+
+* Add links to the non-AMP page, or self if none
+<link rel="canonical" href="https://www.example.com/nonAMP.html">
 -->
 
 <!doctype html>
@@ -66,4 +69,10 @@
 * Open Chrome Devtools and check for validation errors
 
 AMP docs: https://www.ampproject.org/docs/guides/validate
+-->
+
+<!-- Remember to add AMP links to your non-AMP html file
+
+<link rel="amphtml" href="https://www.example.com/url/to/amp/document.html">
+
 -->
