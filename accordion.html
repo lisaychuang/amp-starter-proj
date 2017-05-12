@@ -1,0 +1,144 @@
+<!-- amp-accordion : Email inbox example -->
+
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>AMP Accordion page</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme|VT323" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+   <style amp-custom>
+    body {
+        background-color: white;
+        text-align: left;
+    }
+    amp-img {
+        background-color: gray;
+    }
+
+    amp-accordion section:not([expanded]) h1 {
+        background-color: white;
+        border: 1px solid #b60845;
+        color: #b60845;
+        font-family: 'BioRhyme', serif;
+        height: 80px;
+    }
+
+    amp-accordion section[expanded] h1 {
+        background-color: #E3B5A4;
+        font-family: 'BioRhyme', serif;
+    }
+
+    amp-accordion section[expanded] .nested-accordion h3 {
+        background-color:white;
+        color: black;
+        font-family: 'VT323', monospace;
+    } 
+    amp-accordion section[expanded] .nested-accordion {
+        background-color: #DED9E2;
+        font-family: 'VT323', monospace;
+    }
+
+     amp-accordion section:not([expanded]) .show-less {
+        display: none;
+    }
+
+    amp-accordion section[expanded] .show-more {
+        display: none;
+    }
+   
+    </style>
+  
+  
+  </head>
+  <body>
+    <h1>amp-accordion demo</h1>
+
+    <amp-accordion disable-session-states>
+        <section>
+            <h1>About</h1>
+            <amp-accordion class="nested-accordion">
+                <section>
+                    <h3> Team</h3>
+                    <p>Lorem ipsum dolor sit amet, definiebas consectetuer ad eos, ridens nostro perfecto ad has. Soluta iuvaret vix te, nam invenire dignissim adolescens at. An scaevola mnesarchum nec. Quo feugait expetenda ea, ad lucilius aliquando duo. Ut eam dictas quaestio, his putant animal in, usu recusabo voluptatum adversarium ei.</p>
+                </section>
+                <section>
+                    <h3> Partners</h3>
+                    <p>Id mandamus accommodare eum, doming tritani no quo. Has saepe nonumes in, quas omnis appellantur ad duo. Ius mentitum reformidans ad. Sit no doctus albucius. Ea nam epicurei reprehendunt, per elitr oratio reprimique et, quo sint movet nostrud cu.</p>
+                </section>
+                 <section>
+                    <h3> Media Room</h3>
+                    <p>Sonet integre mei ut. Mel an omnesque interesset, his te decore tamquam, lucilius deseruisse mel ei. Eos in modus suscipit appellantur, vel ut nominavi facilisis, pro an unum dictas voluptaria. Nam no aliquip probatus accusata, omnium aperiri efficiendi sea ea.</p>
+                </section>
+            </amp-accordion>
+        </section>
+
+        <section>
+            <h1>
+                <span class="show-more">Show more programs</span>
+                <span class="show-less">Show less</span>
+            </h1>
+            <ol>
+                <li>Programe 1</li>
+                <li>Program 2</li>
+            </ol>
+        </section>
+
+        <section>
+            <h1>Meeting Rooms</h1>
+            <ul>
+                <li>CO-CREATE</li>
+                    <figure>
+                    <amp-img src="http://madrid.impacthub.net/wp-content/uploads/sites/40/2013/11/impacta_A-1024x683.jpg"
+                        width="300"
+                        height="200"
+                        layout="responsive"
+                        alt="Impacta room"></amp-img>
+                    <figcaption>A meeting room with a solid wood table and a vitrine to see what is going on outside. </figcaption>
+                    </figure>
+                <li>DISEÑA
+                    <figure>
+                        <amp-img src="http://madrid.impacthub.net/wp-content/uploads/sites/40/2013/11/Impulsa_A-1024x683.jpg"
+                        width="300"
+                        height="200"
+                        layout="responsive"
+                        alt="Diseña room">
+                        </amp-img>
+                    <figcaption>For daily meetings or interviews.</figcaption>
+                    </figure>
+                </li>
+                <li>IMPACTA</li>
+                <li>INNOVATION LAB</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>
+                <span class="show-more">Click me &amp; I'll dissappear</span>
+            </h1>
+            <p>Voila! Header is hidden, and just the content is displayed.</p>
+        </section>
+        
+
+    </amp-accordion>
+    
+  </body>
+</html>
