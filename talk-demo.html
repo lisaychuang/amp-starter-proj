@@ -9,11 +9,23 @@
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <style amp-custom>
     h1{
-        color: blue;
+        font-family: Georgia;
     }
     .social{
         margin: auto;
         width: 200px;
+    }
+    amp-accordion h4, amp-accordion p{
+        color: black;
+    }
+
+    .button-text {
+        font-size: 1.5rem;
+    }
+
+    amp-sidebar{
+        width: 150px;
+        background: palegoldenrod;
     }
   </style>
   
@@ -25,10 +37,23 @@
     <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
     <!--AMP Social Share script-->
     <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
-
+    <!--AMP Sidebar script-->
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 </head>
 
 <body>
+    <!--AMP sidebar-->
+    <header>
+        <button on="tap:sidebar.toggle"
+        class="button-text">☰ Menu</button>
+
+        <amp-sidebar id='sidebar' layout='nodisplay' side="left" width="50vw">
+            <button on="tap:sidebar.close" class="button-text">X</button>
+            <h4>About</h4>
+            <h4>Services</h4>
+        </amp-sidebar>
+     </header>
+
   Hello, AMP world.
 
   <h1>Welcome to CorgiWorld</h1>
