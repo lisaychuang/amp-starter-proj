@@ -1,7 +1,5 @@
-<!-- This is the minimum valid AMP HTML document. -->
-
 <!doctype html>
-<html ⚡>
+<html amp>
 <head>
   <meta charset="utf-8">
   <link rel="canonical" href="self.html" />
@@ -14,9 +12,6 @@
     .social{
         margin: auto;
         width: 200px;
-    }
-    amp-accordion h4, amp-accordion p{
-        color: black;
     }
 
     .button-text {
@@ -33,7 +28,7 @@
 
     <!--AMP Youtube video script-->
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
-    <!--AMP Lighthouse script-->
+    <!--AMP Lightbox script-->
     <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
     <!--AMP Social Share script-->
     <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
@@ -42,7 +37,8 @@
 </head>
 
 <body>
-    <!--AMP sidebar-->
+
+    <!--Start AMP sidebar-->
     <header>
         <button on="tap:sidebar.toggle"
         class="button-text">☰ Menu</button>
@@ -53,19 +49,23 @@
             <h4>Services</h4>
         </amp-sidebar>
      </header>
+     <!--End AMP sidebar-->
 
   <h1>Welcome to CorgiWorld</h1>
   <p>Puppy kitty ipsum dolor sit good dog spike park field smooshy vitamins purr play stick fish dog. Left Paw run fast feathers water scratch cockatiel roll over foot aquarium aquatic cage furry running fish stay pet. </p>
 
-  <!--AMP Youtube video player-->
-    <amp-youtube layout="responsive" autoplay
+  <!--Start AMP Youtube video player-->
+    <amp-youtube layout="responsive" 
         data-videoid="Wvt_K4LW29c"
         width=300
-        height="250">
+        height="250"
+        autoplay>
     </amp-youtube>
-    
+    <!--End AMP Youtube video player-->
+
   <h2>Meet our corgi pups!</h1>  
-  <!--AMP img lighthouse-->
+
+  <!--Star AMP img lightbox-->
     <figure>
         <amp-img on="tap:lightbox1"
             role="button"
@@ -79,20 +79,21 @@
             <div fallback>offline</div>
         </amp-img>
 
-         <!-- Optional caption -->
-        <figcaption id="caption1">I'm a cute corgi!</figcaption>
+        <figcaption id="caption1">I'm a cute corgi!</figcaption><!-- Optional caption -->
     </figure>
 
     <amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
+    <!--End AMP img lightbox-->
 
-    <!--AMP Social Buttons-->
+    <!--Start AMP Social Buttons-->
     <div class="social">
         <amp-social-share type="email"></amp-social-share>
         <amp-social-share type="facebook"
-        data-param-app_id="254325784911610"
-        ></amp-social-share>
+        data-param-app_id="254325784911610"></amp-social-share>
         <amp-social-share type="twitter"
         data-param-text="Check out this Corgi"></amp-social-share>
     </div>
+    <!--End AMP Social Buttons-->
+
     </body>
 </html>
