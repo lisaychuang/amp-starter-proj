@@ -45,7 +45,7 @@ class="button-text menu">☰ Menu</button>
 <amp-sidebar id='sidebar' layout='nodisplay' side="left" width="50vw">
     <button on="tap:sidebar.close" class="button-text">X</button>
     <h4>About</h4>
-    <h4>Services</h4>
+    <h4>Adoptions</h4>
 </amp-sidebar><!--End AMP sidebar-->
 
 
