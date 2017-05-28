@@ -19,6 +19,12 @@
 <style amp-custom>
 </style>
 
+# AMP Custom Fonts
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Fredoka+One" rel="stylesheet">
+
+font-family: 'Crimson Text', serif;
+font-family: 'Fredoka One', cursive;
+
 # AMP Custom Component Scripts:
 
 <!--AMP Youtube video script-->
