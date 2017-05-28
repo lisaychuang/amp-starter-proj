@@ -40,13 +40,13 @@ font-family: 'Fredoka One', cursive;
 # AMP Sidebar
 <!--Start AMP sidebar-->
 <button on="tap:sidebar.toggle"
-class="button-text">☰ Menu</button>
+class="button-text menu">☰ Menu</button>
 
 <amp-sidebar id='sidebar' layout='nodisplay' side="left" width="50vw">
     <button on="tap:sidebar.close" class="button-text">X</button>
     <h4>About</h4>
     <h4>Services</h4>
-</amp-sidebar> <!--End AMP sidebar-->
+</amp-sidebar><!--End AMP sidebar-->
 
 
 # AMP Youtube Player
