@@ -11,14 +11,20 @@
     h1{
         color: blue;
     }
+    .social{
+        margin: auto;
+        width: 200px;
+    }
   </style>
   
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-  <!--AMP Youtube video script-->
-  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
-  <!--AMP Lighthouse script-->
-  <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+    <!--AMP Youtube video script-->
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <!--AMP Lighthouse script-->
+    <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+    <!--AMP Social Share script-->
+    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 
 </head>
 
@@ -56,5 +62,11 @@
 
     <amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
 
-</body>
+    <!--AMP Social Buttons-->
+    <div class="social">
+        <amp-social-share type="email"></amp-social-share>
+        <amp-social-share type="twitter"></amp-social-share>
+        <amp-social-share type="pinterest"></amp-social-share>
+    </div>
+    </body>
 </html>
