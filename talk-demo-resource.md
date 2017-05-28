@@ -19,6 +19,12 @@
 <style amp-custom>
 </style>
 
+# AMP Custom Fonts
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Fredoka+One" rel="stylesheet">
+
+font-family: 'Crimson Text', serif;
+font-family: 'Fredoka One', cursive;
+
 # AMP Custom Component Scripts:
 
 <!--AMP Youtube video script-->
@@ -34,13 +40,13 @@
 # AMP Sidebar
 <!--Start AMP sidebar-->
 <button on="tap:sidebar.toggle"
-class="button-text">☰ Menu</button>
+class="button-text menu">☰ Menu</button>
 
 <amp-sidebar id='sidebar' layout='nodisplay' side="left" width="50vw">
     <button on="tap:sidebar.close" class="button-text">X</button>
     <h4>About</h4>
-    <h4>Services</h4>
-</amp-sidebar> <!--End AMP sidebar-->
+    <h4>Adoptions</h4>
+</amp-sidebar><!--End AMP sidebar-->
 
 
 # AMP Youtube Player
