@@ -17,12 +17,15 @@
 
   <!--AMP Youtube video script-->
   <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+  <!--AMP Lighthouse script-->
+  <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+
 </head>
 
 <body>
   Hello, AMP world.
 
-  <h1>CorgiWorld</h1>
+  <h1>Welcome to CorgiWorld</h1>
   <p>Puppy kitty ipsum dolor sit good dog spike park field smooshy vitamins purr play stick fish dog. Left Paw run fast feathers water scratch cockatiel roll over foot aquarium aquatic cage furry running fish stay pet. </p>
 
   <!--AMP Youtube video player-->
@@ -32,6 +35,26 @@
         height="250">
     </amp-youtube>
     
-  
+  <h2>Meet our corgi pups!</h1>  
+  <!--AMP img lighthouse-->
+    <figure>
+        <amp-img on="tap:lightbox1"
+            role="button"
+            tabindex="0"
+            layout="responsive"
+            src="http://placecorgi.com/300/250"
+            width="400"
+            height="350"
+            alt="Picture of a corgi"
+            title="Picture of a corgi, view in lightbox">
+            <div fallback>offline</div>
+        </amp-img>
+
+         <!-- Optional caption -->
+        <figcaption id="caption1">I'm a cute corgi!</figcaption>
+    </figure>
+
+    <amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
+
 </body>
 </html>
